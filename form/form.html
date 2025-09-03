@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>  
+            <label >Skill: </label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="skill" value="html"> HTML</label>
+                <label><input type="checkbox" name="skill" value="css"> CSS</label>
+                <label><input type="checkbox" name="skill" value="javascript"> JavaScript</label>
+            </div>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
